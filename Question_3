@@ -1,0 +1,28 @@
+class Circle{
+    double radius;
+    Circle(double radius){
+        this.radius=radius;
+    }
+    double area(){
+        return(3.14*radius*radius);
+    }
+    double getRadius() {
+        return (radius);
+    }
+}
+
+public class Question_3 {
+    public static void main(String[] args) {
+        
+        Circle[] circle=new Circle[3];
+
+        circle[0]=new Circle(9.76);
+        circle[1]=new Circle(6.66);
+        circle[2]=new Circle(8.57);
+
+        for(int i=0;i<3;i++){
+            System.out.println("Radius = "+circle[i].getRadius() + "  Area = " + circle[i].area());
+        }
+
+    }
+}
