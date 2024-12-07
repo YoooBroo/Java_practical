@@ -1,0 +1,17 @@
+public class Question_7 {
+    public static void main(String[] args) {
+        Car();
+        Car(2);
+        Car(4,3.4f);
+
+    }
+    static void Car (){
+        System.out.println("Without parameter");
+    }
+    static void Car(int a){
+        System.out.println("One Parameter  Int = "+a);
+    }
+    static void Car(int a,float f){
+        System.out.println("two Parameter  Int = "+a+"  Float = "+f);
+    }
+}
