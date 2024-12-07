@@ -1,0 +1,61 @@
+class Add implements Runnable{
+    int a,b;
+    Add(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    public void run(){
+        System.out.println("SUM = "+(a+b));
+    }
+}
+class Substraction implements Runnable{
+    int a,b;
+    Substraction(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    public void run(){
+        System.out.println("Subtraction = "+(a-b));
+    }
+}
+class Multiple implements Runnable{
+    int a,b;
+    Multiple(int a,int b){
+        this.a=a;
+        this.b=b;
+    }
+    public void run(){
+        System.out.println("Multiple =  "+(a*b));
+    }
+}
+class Divide implements Runnable{
+    double a,b;
+
+    Divide(double a,double b){
+        this.a=a;
+        this.b=b;
+    }
+    public void run(){
+        if(b==0){
+            System.out.println("divide by 0 is not possible");
+        }
+        else{
+            System.out.println("Division = "+(a/b));
+        }
+    }
+
+}
+
+public class Question_2{
+    public static void main(String[] args) {
+        Thread addition = new Thread(new Add(10, 15));
+        Thread Sub = new Thread(new Substraction(10, 15));
+        Thread Mul = new Thread(new Multiple(10, 15));
+        Thread Div = new Thread(new Divide(10, 15));
+        
+        addition.start();
+        Sub.start();
+        Mul.start();
+        Div.start();
+    }
+}
