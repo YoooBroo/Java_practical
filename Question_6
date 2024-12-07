@@ -1,0 +1,20 @@
+class Person{
+   Person(){
+        System.out.println("Without parameter Constructor");
+    }
+    Person(int a){
+        System.out.println("One Parameter   How many person = "+a);
+    }
+    Person(int a,int f){
+        System.out.println("Two Parameter   How many boys  = "+a+" girls = "+f);
+    }
+}
+
+public class Question_6 {
+    public static void main(String[] args) {
+        Person P1=new Person();
+        Person P2=new Person(7);
+        Person P3=new Person(4,3);
+        
+    }
+}
