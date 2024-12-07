@@ -1,0 +1,27 @@
+class OnlineShopping {
+    public String Name;
+    public OnlineShopping(String Name){
+        this.Name = Name;
+    }
+    public void display(){
+        System.out.println("Name = "+Name);
+    }
+}
+
+class FlipKart extends OnlineShopping{
+    public FlipKart(String Name){
+        super(Name);
+    }
+}
+class Amazon extends OnlineShopping{
+    public Amazon(String Name){
+        super(Name);
+    }
+}
+
+public class Question_5 {
+    public static void main(String[] args) {
+        Amazon A=new Amazon("Amazon");
+        A.display();
+    }
+}
