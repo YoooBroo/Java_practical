@@ -1,0 +1,21 @@
+class  Government{
+    void over(){
+        System.out.println("Government");
+    }
+}
+class Finance extends Government{
+    @Override
+    void over(){
+        System.out.println( "Finance");
+    }
+} 
+
+public class Question_8 {
+    public static void main(String[] args) {
+        Government G1=new Government();
+        Finance f1=new Finance();
+
+        G1.over();
+        f1.over();
+    }
+}
