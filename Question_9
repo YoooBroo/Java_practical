@@ -1,0 +1,26 @@
+class Fruit{
+    String Name;
+    int Price;
+    Fruit(String Name ,int Price){
+        if(Price < 0){
+            throw new IllegalArgumentException("Price Not Valid");
+            }
+            this.Name=Name;
+            this.Price=Price;          
+}
+public void display(){
+    System.out.println("Name = "+ Name + "  Price = "+Price);
+}
+}
+public class Question_9 {
+        public static void main(String[] args) {
+        try{
+        Fruit F1=new Fruit("Mango", 29);
+        F1.display();
+        Fruit F2=new Fruit("Watermelon", -67);
+        F1.display();
+        }catch(IllegalArgumentException e){
+            System.out.println("Exception caught:"+e.getMessage());
+        }
+    }
+}
