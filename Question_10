@@ -13,6 +13,5 @@ f.write(new String(b));
 f.close(); 
 } 
 }
-
 //Use cmd 
 //java Question_10 Sourcefile.txt destinationfile.txt like this
