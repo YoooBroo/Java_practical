@@ -1,0 +1,22 @@
+import java.awt.*;
+import java.awt.event.*;
+
+class test extends Frame implements ActionListener{
+    test(){
+        Button b = new Button("Ram");
+        add(b, BorderLayout.CENTER);
+        b.addActionListener(this);
+        setSize(100, 100);
+        setVisible(true);
+    }
+    
+    public void actionPerformed(ActionEvent e){
+        System.out.println("SITA RAM");
+    }
+}
+
+public class Q11{
+    public static void main(String[] args){
+        new test();
+    }
+}
